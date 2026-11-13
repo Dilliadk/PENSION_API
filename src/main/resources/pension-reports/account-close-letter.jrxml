@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="account-close-letter" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="451" leftMargin="72" rightMargin="72" topMargin="72" bottomMargin="72" uuid="4f0bf3ed-8fdb-456d-b3dc-efa1b60477a2">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="inch"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="created_date" class="java.lang.String"/>
+	<parameter name="subject" class="java.lang.String"/>
+	<parameter name="body" class="java.lang.String"/>
+	<parameter name="office_name" class="java.lang.String"/>
+	<parameter name="office_location" class="java.lang.String"/>
+	<parameter name="approve_date" class="java.lang.String"/>
+	<parameter name="approve_by" class="java.lang.String"/>
+	<parameter name="approve_post" class="java.lang.String"/>
+	<parameter name="bodartha" class="java.lang.String"/>
+	<parameter name="note" class="java.lang.String"/>
+	<parameter name="govLogo" class="java.lang.String"/>
+	<parameter name="fiscal_year" class="java.lang.String"/>
+	<parameter name="voucher_no" class="java.lang.String"/>
+	<parameter name="creator_office" class="java.lang.String"/>
+	<parameter name="creator_address" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="277" splitType="Stretch">
+			<textField>
+				<reportElement x="250" y="151" width="200" height="20" uuid="19da08df-5888-435a-a300-83da63097c23">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Kalimati"/>
+				</textElement>
+				<textFieldExpression><![CDATA["मितिः " + $P{created_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="178" width="450" height="20" uuid="c888dcd2-d13f-4151-98f6-bc0e173cc796">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Kalimati" isBold="true"/>
+				</textElement>
+				<text><![CDATA[विषयः– निवृत्तभरण भुक्तानी खाता बन्द गरिदिने सम्बन्धमा ।]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="1" y="213" width="449" height="64" uuid="bb72a64c-b5f5-4512-bdde-cfd0bb6db472">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Kalimati"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{body}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="131" width="180" height="20" uuid="8fac5220-50bb-4ae9-a574-9bfe5b06961e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Kalimati"/>
+				</textElement>
+				<textFieldExpression><![CDATA["पत्र संख्याः " + $P{fiscal_year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="151" width="180" height="20" uuid="ebc63439-7c26-4c13-be54-14437a21cef4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Kalimati"/>
+				</textElement>
+				<textFieldExpression><![CDATA["चलानी नं: " + $P{voucher_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="80" y="20" width="300" height="20" uuid="86a274ad-a72a-4da5-a645-551c392bf8f8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Kalimati"/>
+				</textElement>
+				<text><![CDATA[अर्थ मन्त्रालय]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="65" width="300" height="30" uuid="b038d2f5-b2a2-44b4-a50e-2b8f8aa15d05">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Kalimati" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{creator_office}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="80" y="95" width="300" height="20" uuid="802bffcc-639b-4747-8721-ccad400f2d8b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Kalimati"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{creator_address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="80" y="0" width="300" height="20" uuid="475f2158-c1a2-4166-b9ea-bd61be008405">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Kalimati"/>
+				</textElement>
+				<text><![CDATA[नेपाल सरकार]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="40" width="300" height="25" uuid="b281e006-b538-4dbd-8af9-6653e676e2b4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Kalimati" size="12"/>
+				</textElement>
+				<text><![CDATA[महालेखा नियन्त्रक कार्यालय]]></text>
+			</staticText>
+			<image isLazy="true">
+				<reportElement x="7" y="20" width="65" height="65" uuid="58c25741-7662-471a-901a-2b6b0ae968fe"/>
+				<imageExpression><![CDATA[$P{govLogo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<summary>
+		<band height="189">
+			<textField>
+				<reportElement x="0" y="123" width="380" height="40" uuid="e7f3698d-e17b-4071-947c-eeb76a6d53f0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Kalimati"/>
+				</textElement>
+				<textFieldExpression><![CDATA["बोधार्थः–\n"+ $P{bodartha}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="0" y="163" width="380" height="20" uuid="a78c21d7-fdb2-46fa-9704-a1ce205e26ac">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{note} == null? null: "नोट " + $P{note}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="digitalSignature" x="291" y="30" width="160" height="47" uuid="e32e9bce-c144-4792-8aeb-b62bf72855e4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="291" y="77" width="160" height="20" uuid="35dcb917-33f2-4b07-bc43-34417cafaee8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS"/>
+					<paragraph leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{approve_by}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="291" y="97" width="160" height="20" uuid="f4b17915-c40f-4b74-9483-1f07b5d2bd44">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial Unicode MS"/>
+					<paragraph leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{approve_post}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

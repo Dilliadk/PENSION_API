@@ -1,0 +1,89 @@
+{
+  "properties": [
+    {
+      "name": "app.image.upload-dir",
+      "type": "java.lang.String",
+      "description": "Upload Directory"
+    },
+    {
+      "name": "app.image.base-url",
+      "type": "java.lang.String",
+      "description": "A description for 'app.image.base-url'"
+    },
+    {
+      "name": "aws.access.key.id",
+      "type": "java.lang.String",
+      "description": "A description for 'aws.access.key.id'"
+    },
+    {
+      "name": "aws.secret.access.key",
+      "type": "java.lang.String",
+      "description": "A description for 'aws.secret.access.key'"
+    },
+    {
+      "name": "aws.region",
+      "type": "java.lang.String",
+      "description": "A description for 'aws.region'"
+    },
+    {
+      "name": "app.secret.key",
+      "type": "java.lang.String",
+      "description": "A description for 'app.secret.key'"
+    },
+    {
+      "name": "prixa.secret_key",
+      "type": "java.lang.String",
+      "description": "A description for 'prixa.secret_key'"
+    },
+    {
+      "name": "prixa.callback_url",
+      "type": "java.lang.String",
+      "description": "A description for 'prixa.callback_url'"
+    },
+    {
+      "name": "app.is_development",
+      "type": "java.lang.Boolean",
+      "description": "Determines whether development mode is on or off"
+    },
+    {
+      "name": "legacy.data.datasource.url",
+      "type": "java.lang.String",
+      "description": "A description for 'legacy.data.datasource.url'"
+    },
+    {
+      "name": "legacy.data.datasource.username",
+      "type": "java.lang.String",
+      "description": "A description for 'legacy.data.datasource.username'"
+    },
+    {
+      "name": "legacy.data.datasource.password",
+      "type": "java.lang.String",
+      "description": "A description for 'legacy.data.datasource.password'"
+    },
+    {
+      "name": "legacy.data.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "description": "A description for 'legacy.data.datasource.driver-class-name'"
+    },
+    {
+      "name": "legacy.image.datasource.url",
+      "type": "java.lang.String",
+      "description": "A description for 'legacy.image.datasource.url'"
+    },
+    {
+      "name": "legacy.image.datasource.username",
+      "type": "java.lang.String",
+      "description": "A description for 'legacy.image.datasource.username'"
+    },
+    {
+      "name": "legacy.image.datasource.password",
+      "type": "java.lang.String",
+      "description": "A description for 'legacy.image.datasource.password'"
+    },
+    {
+      "name": "legacy.image.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "description": "A description for 'legacy.image.datasource.driver-class-name'"
+    }
+  ]
+}
